@@ -1,0 +1,265 @@
+{
+  "images": {
+    "whoWeAre": [
+      {
+        "src": "./school.png",
+        "alt": "school image",
+        "name": "School"
+      },
+      {
+        "src": "./lesson.png",
+        "alt": "lesson 1",
+        "name": "Lesson 1"
+      },
+      {
+        "src": "./session.png",
+        "alt": "Digital art session",
+        "name": "Digital Art Session"
+      }
+    ],
+    "worker": [
+      {
+        "src": "https://i.ibb.co/kVq2bksH/omar-sabry.png",
+        "alt": "omar",
+        "name": "omar sabry",
+        "year": 2024
+      },
+      {
+        "src": "https://i.ibb.co/pBwGZ3R5/ebram.png",
+        "alt": "ebram",
+        "name": "ebram youssef",
+        "year": 2024
+      },
+      {
+        "src": "https://i.ibb.co/ZzFx5SyQ/omar-mohamed.png",
+        "alt": "omar",
+        "name": "omar mohamed",
+        "year": 2024
+      },
+      {
+        "src": "https://i.ibb.co/d4xqRnDX/abdelrahman.png",
+        "alt": "Abdelrahman",
+        "name": "abdelrahman ehab",
+        "year": 2024
+      },
+      {
+        "src": "https://i.ibb.co/vvL9xwSm/ali.png",
+        "alt": "ali",
+        "name": "ali mostafa",
+        "year": 2024
+      },      
+      {
+        "src": "https://i.ibb.co/bRQWzPh4/ibrahim.png",
+        "alt": "ibrahim",
+        "name": "ibrahim negm",
+        "year": 2024
+      },
+      {
+        "src": "https://i.ibb.co/ZRxY5rCp/mazen.png",
+        "alt": "mazen",
+        "name": "mazen wael",
+        "year": 2024
+      },
+      {
+        "src": "https://i.ibb.co/LX82cmyC/islam.jpg",
+        "alt": "islam",
+        "name": "islam abdelsalam",
+        "year": 2025
+      },
+      {
+        "src": "https://i.ibb.co/r242cBpb/mahmoud.jpg",
+        "alt": "mahmoud",
+        "name": "Mahmoud Emad",
+        "year": 2025
+      },
+      {
+        "src": "https://i.ibb.co/cXwPsHMn/ziad.jpg",
+        "alt": "ziad",
+        "name": "ziad salah",
+        "year": 2025
+      },
+      {
+        "src": "https://i.ibb.co/kVq115K9/mody.jpg",
+        "alt": "mody",
+        "name": "Mohamed Salah",
+        "year": 2025
+      },      
+      {
+        "src": "https://i.ibb.co/8L9z9FMx/amro.jpg",
+        "alt": "Amro Salah",
+        "name": "amro salah",
+        "year": 2025
+      },
+      {
+        "src": "https://i.ibb.co/hRGypKQr/kozman.jpg",
+        "alt": "kozman",
+        "name": "Kozman Ashraf",
+        "year": 2025
+      },
+      {
+        "src": "https://i.ibb.co/23t2gzP3/tareq-ismail.jpg",
+        "alt": "tareq_ismail",
+        "name": "Tareq Ismail",
+        "year": 2025
+      },
+      {
+        "src": "https://i.ibb.co/kgMtp7pb/tareq-khalil.jpg",
+        "alt": "tareq_khalil",
+        "name": "Tareq Khalil",
+        "year": 2025
+      },
+      {
+        "src": "https://i.ibb.co/DDFjhg5j/yaseen.jpg",
+        "alt": "yaseen",
+        "name": "Yassin ahmed",
+        "year": 2025
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/gallery/0.mp4",
+        "alt": "gallery video 0",
+        "name": "Gallery Video 0"
+      },
+      {
+        "src": "https://i.ibb.co/TDvMmZpY/9.jpg",
+        "alt": "gallery image 1",
+        "name": "Gallery Image 1"
+      },
+      {
+        "src": "https://i.ibb.co/fGDdxhVh/8.jpg",
+        "alt": "gallery image 2",
+        "name": "Gallery Image 2"
+      },
+      {
+        "src": "https://i.ibb.co/WWbMXKBB/10.jpg",
+        "alt": "gallery image 3",
+        "name": "Gallery Image 3"
+      },
+      {
+        "src": "https://i.ibb.co/1GdGRTn6/11.jpg",
+        "alt": "gallery image 4",
+        "name": "Gallery Image 4"
+      },
+      {
+        "src": "https://i.ibb.co/mFDkffhs/13.jpg",
+        "alt": "gallery image 5",
+        "name": "Gallery Image 5"
+      },
+      {
+        "src": "https://i.ibb.co/LDh48gKP/14.png",
+        "alt": "gallery image 7",
+        "name": "Gallery image 7"
+      },
+      {
+        "src": "https://i.ibb.co/9H4Hmp3h/15.png",
+        "alt": "gallery image 8",
+        "name": "Gallery Image 8"
+      },
+      {
+        "src": "https://i.ibb.co/JFBw00vs/16.jpg",
+        "alt": "gallery image 9",
+        "name": "Gallery Image 9"
+      },
+      {
+        "src": "https://i.ibb.co/JWgQX1Lp/17.gif",
+        "alt": "gallery image 10",
+        "name": "Gallery Image 10"
+      },
+      {
+        "src": "https://i.ibb.co/ZpFnQp8z/19.jpg",
+        "alt": "gallery image 11",
+        "name": "Gallery Image 11"
+      },
+      {
+        "src": "https://i.ibb.co/Kxh5TCTY/20.jpg",
+        "alt": "gallery image 12",
+        "name": "Gallery Image 12"
+      },
+      {
+        "src": "https://i.ibb.co/zhCcyLGd/21.jpg",
+        "alt": "gallery image 13",
+        "name": "Gallery Image 13"
+      },
+      {
+        "src": "https://i.ibb.co/3YjtmD8J/18.png",
+        "alt": "gallery image 14",
+        "name": "Gallery Image 14"
+      },
+      {
+        "src": "https://i.ibb.co/SD1TQCBR/1.jpg",
+        "alt": "gallery image 15",
+        "name": "Gallery Image 15"
+      },
+      {
+        "src": "https://i.ibb.co/nxJ11nj/2.jpg",
+        "alt": "gallery image 16",
+        "name": "Gallery Image 16"
+      },
+      {
+        "src": "https://i.ibb.co/MkyG2svT/3.jpg",
+        "alt": "gallery image 17",
+        "name": "Gallery Image 17"
+      },
+      {
+        "src": "https://i.ibb.co/6cWJWTjf/4.jpg",
+        "alt": "gallery image 18",
+        "name": "Gallery Image 18"
+      },
+      {
+        "src": "https://i.ibb.co/gLvvY42N/7.jpg",
+        "alt": "gallery image 19",
+        "name": "Gallery Image 19"
+      },
+      {
+        "src": "https://i.ibb.co/vxmmZCZp/12.png",
+        "alt": "gallery image 20",
+        "name": "Gallery Image 20"
+      }
+    ]
+  },
+  "apps": [
+    {
+      "id": 1,
+      "name": "Adobe Illustrator",
+      "description": "Vector Graphics Design.",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/1191a2a4583806db8e6f246f5bffd3d5c15edac8_illustrator.svg",
+      "category": "visual-arts"
+    },
+    {
+      "id": 2,
+      "name": "Adobe Photoshop", 
+      "description": "Photo Manipulation and Design.",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/281278b2da504aadba6a1c01255b3c5164ab94a7_photoshop.svg",
+      "category": "visual-arts"
+    },
+    {
+      "id": 3,
+      "name": "Adobe Animate",
+      "description": "Create Flash Animations & Effects.",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/ec959176909e609de6af253edd264c176dfcdc1d_animate.svg",
+      "category": "visual-arts"
+    },
+    {
+      "id": 4,
+      "name": "Adobe After Effects",
+      "description": "Create Visual Effects & Motion Graphics.",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/2e9886a9ddbbbc35f0acc0970a4046d8203a3baf_after_effects.svg",
+      "category": "visual-arts"
+    },
+    {
+      "id": 5,
+      "name": "Adobe Premiere Pro",
+      "description": "Video Editing and Production.",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/16453f22c5c0b9841c15bea5ba386b9bf951be2a_premiere.svg",
+      "category": "visual-arts"
+    },
+    {
+      "id": 6,
+      "name": "Blender",
+      "description": "3D Modeling and Animation.",
+      "iconImage": "https://hc-cdn.hel1.your-objectstorage.com/s/v3/fc8b6cad3ab8a19aebf190e77f136b238213d44b_blender.svg",
+      "category": "visual-arts"
+    }
+  ]
+}

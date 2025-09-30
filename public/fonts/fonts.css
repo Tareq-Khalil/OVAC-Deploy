@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Motoverse';
+  src: url('Motoverse.woff2') format('woff2'),
+       url('Motoverse.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.fonted{
+  font-family: 'Motoverse', sans-serif;
+}
