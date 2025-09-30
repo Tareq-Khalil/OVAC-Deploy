@@ -27,8 +27,8 @@ const Footer = () => {
         </div>
         {/* adress and mail */}
         <div className="mb-6 text-gray-400">
-          <a href="mailto:visualartsclubstem@gmail.com" className="hover:text-[white] transition-colors duration-300">
-              visualartsclubstem@gmail.com
+          <a href="mailto:info@octvisualartsclu.org" className="hover:text-[white] transition-colors duration-300">
+              info@octvisualartsclu.org
           </a>
         </div>
         <div className="text-gray-500">
