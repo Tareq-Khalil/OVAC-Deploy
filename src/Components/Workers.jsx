@@ -15,7 +15,7 @@ const workersFromJSON = DB.images.worker.map(worker => ({
 
 // You can also create a role mapping if you want specific roles for each person
 const roleMapping = {
-  "ziad salah": "Vice-President",
+  "ziad salah": "Sex Slave",
   "abdelrahman ehab": "Mentor",
   "ali mostafa": "Mentor", 
   "ebram youssef": "Vice-President",
@@ -25,7 +25,7 @@ const roleMapping = {
   "yassin ahmed": "Co-Web Developer",
   "omar mohamed": "Vice-President",
   "omar sabry": "President",
-  "amro salah": "Illustrator Mentor",
+  "amro salah": "Vice President",
   "kozman ashraf": "Photoshop Mentor",
   "islam abdelsalam": "President",
   "shahd": "Mentor",

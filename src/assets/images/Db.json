@@ -72,24 +72,20 @@
         "name": "Mahmoud Emad",
         "year": 2025
       },
-      {
-        "src": "https://i.ibb.co/cXwPsHMn/ziad.jpg",
-        "alt": "ziad",
-        "name": "ziad salah",
+            {
+        "src": "https://i.ibb.co/8L9z9FMx/amro.jpg",
+        "alt": "Amro Salah",
+        "name": "amro salah",
         "year": 2025
       },
+
       {
         "src": "https://i.ibb.co/kVq115K9/mody.jpg",
         "alt": "mody",
         "name": "Mohamed Salah",
         "year": 2025
       },      
-      {
-        "src": "https://i.ibb.co/8L9z9FMx/amro.jpg",
-        "alt": "Amro Salah",
-        "name": "amro salah",
-        "year": 2025
-      },
+
       {
         "src": "https://i.ibb.co/hRGypKQr/kozman.jpg",
         "alt": "kozman",
@@ -113,7 +109,13 @@
         "alt": "yaseen",
         "name": "Yassin ahmed",
         "year": 2025
-      }
+      },
+            {
+        "src": "https://i.ibb.co/cXwPsHMn/ziad.jpg",
+        "alt": "ziad",
+        "name": "ziad salah",
+        "year": 2025
+      },
     ],
     "gallery": [
       {
