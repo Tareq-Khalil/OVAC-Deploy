@@ -1,6 +1,6 @@
 // ...existing code...
 import React, { useState } from 'react';
-import Closed from '../closed';
+import Closed from './Components/closed';
 
 const ClosedRegistration = () => {
   return (
