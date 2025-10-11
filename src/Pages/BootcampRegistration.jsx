@@ -1,9 +1,9 @@
 import React from 'react';
-import RegistrationForm from './components/RegistrationForm';
+import RegistrationForm from '../components/RegistrationForm';
 // Or adjust the path based on where your page file is located:
 // import RegistrationForm from '../components/RegistrationForm';
 
-const BootcampRegistrationPage = () => {
+const BootcampRegistration = () => {
   return (
     <div>
       <RegistrationForm />
@@ -11,4 +11,4 @@ const BootcampRegistrationPage = () => {
   );
 };
 
-export default BootcampRegistrationPage;
+export default BootcampRegistration;
