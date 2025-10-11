@@ -1,13 +1,12 @@
+// ...existing code...
 import React from 'react';
-import RegistrationForm from '../components/closed';
-// Or adjust the path based on where your page file is located:
-// import RegistrationForm from '../components/RegistrationForm';
+import Closed from '../components/closed';
 
-const RegistrationForm = () => {
+const ClosedRegistration = () => {
   return (
     <div>
-      <ClosedRegistration />
+      <Closed />
     </div>
   );
 };
-export default RegistrationForm;
+export default ClosedRegistration;
