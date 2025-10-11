@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ClosedRegistration = () => {
+const Closed = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center p-6">
       <div className="max-w-2xl mx-auto">
@@ -42,4 +42,4 @@ const ClosedRegistration = () => {
   );
 };
 
-export default RegistrationForm;
+export default Closed;
