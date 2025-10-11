@@ -1,14 +1,13 @@
 import React from 'react';
-import RegistrationForm from '../components/RegistrationForm';
+import RegistrationForm from '../components/closed';
 // Or adjust the path based on where your page file is located:
 // import RegistrationForm from '../components/RegistrationForm';
 
-const BootcampRegistration = () => {
+const RegistrationForm = () => {
   return (
     <div>
-      <RegistrationForm />
+      <ClosedRegistration />
     </div>
   );
 };
-
-export default BootcampRegistration;
+export default RegistrationForm;
