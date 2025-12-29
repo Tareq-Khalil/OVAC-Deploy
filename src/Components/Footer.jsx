@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaInstagram, FaTwitter, FaFacebookF, FaYoutube } from 'react-icons/fa';
-import Logo from "../assets/logo.png"; // Adjust the path to the logo image
+import Logo from "../assets/logo.png";
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8 px-4 border-t border-gray-800">
