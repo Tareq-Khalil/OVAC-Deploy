@@ -122,6 +122,16 @@
         "name": "Gallery Video 0"
       },
       {
+        "src": "/gallery/01.mp4",
+        "alt": "gallery video 1",
+        "name": "Gallery video 1"
+      },
+      {
+        "src": "/gallery/02.mp4",
+        "alt": "gallery video 2",
+        "name": "Gallery video 2"
+      },
+      {
         "src": "https://i.ibb.co/TDvMmZpY/9.jpg",
         "alt": "gallery image 1",
         "name": "Gallery Image 1"
