@@ -101,7 +101,7 @@ const BootcampStats = () => {
         As the club was founded in 2024, our previous season was the first season and we organized our first Bootcamp then, and here is what we accomplished:
       </motion.p>
       
-      <div className="flex flex-col md:flex-row items-center justify-center mt-8">
+      <div className="flex flex-col md:flex-row items-center justify-center mt-12">
         {stats.map((stat, idx) => (
           <StatBox
             key={stat.label}
