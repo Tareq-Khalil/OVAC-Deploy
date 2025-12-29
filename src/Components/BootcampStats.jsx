@@ -24,7 +24,7 @@ const stats = [
     label: "Certificates",
     value: 30,
     colors: "from-[#53be97] to-[#2caa7c]",
-    border: "border-[#53be97]",  
+    border: "border-[#53be97]",
     gradient:
       "linear-gradient(135deg, rgba(83,190,151,0.25) 0%, rgba(44,170,124,0.25) 100%)",
   },
@@ -66,7 +66,8 @@ const StatBox = ({ label, value, colors, delay, border, gradient }) => {
       whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.6, delay }}
       viewport={{ once: false, amount: 0.5 }}
-      className={`flex flex-col items-center justify-center rounded-2xl px-10 py-8 shadow-xl mx-4 min-w-[220px] min-h-[180px] md:w-[240px] md:h-[200px] border-4 ${border}`}
+      // UPDATED LINE BELOW: Added 'my-6 md:my-0'
+      className={`flex flex-col items-center justify-center rounded-2xl px-10 py-8 shadow-xl mx-4 my-6 md:my-0 min-w-[220px] min-h-[180px] md:w-[240px] md:h-[200px] border-4 ${border}`}
       style={{
         background: gradient,
         backdropFilter: "blur(16px)",
@@ -89,18 +90,20 @@ const BootcampStats = () => {
         <HeadWord HeadWord={"Last Year's Numbers"} />
         <Underline />
       </div>
-      
+
       {/* Introductory text */}
-      <motion.p 
+      <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: false, amount: 0.5 }}
         className="text-center text-lg md:text-xl text-white max-w-4xl mx-auto mt-8 mb-8 px-4"
       >
-        As the club was founded in 2024, our previous season was the first season and we organized our first Bootcamp then, and here is what we accomplished:
+        As the club was founded in 2024, our previous season was the first
+        season and we organized our first Bootcamp then, and here is what we
+        accomplished:
       </motion.p>
-      
+
       <div className="flex flex-col md:flex-row items-center justify-center mt-12">
         {stats.map((stat, idx) => (
           <StatBox
