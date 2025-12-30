@@ -54,7 +54,6 @@ const BootcampCTA = () => {
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >
-                    {/* Animated gradient border */}
                     <div 
                         className="absolute inset-0 rounded-2xl md:rounded-3xl"
                         style={{
@@ -72,7 +71,6 @@ const BootcampCTA = () => {
                         />
                     </div>
 
-                    {/* Floating particles */}
                     {isVisible && (
                         <>
                             <div 
@@ -102,25 +100,20 @@ const BootcampCTA = () => {
                         </>
                     )}
 
-                    {/* Content */}
                     <div className="relative z-10 space-y-6 md:space-y-8">
-                        {/* Main Heading */}
                         <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-green-400 mb-4">
                                 Ready to become an artist?
                             </h2>
                         </div>
 
-                        {/* Subtitle */}
                         <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto">
                                 Begin your artistic experience with October Visual Arts Bootcamp
                             </p>
                         </div>
 
-                        {/* Info Section */}
                         <div className={`flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-8 transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                            {/* Program Start Date */}
                             <div className="text-center">
                                 <p className="text-white text-sm md:text-base mb-2">Program Starts at</p>
                                 <p className="text-[var(--main-color-2)] text-lg md:text-xl lg:text-2xl font-bold">
@@ -128,10 +121,8 @@ const BootcampCTA = () => {
                                 </p>
                             </div>
 
-                            {/* Separator */}
                             <div className="hidden lg:block w-px h-16 bg-gradient-to-b from-transparent via-white to-transparent opacity-50"></div>
 
-                            {/* Apply Button */}
                             <div className="flex items-center">
                                 <button
                                     onClick={handleApplyNow}
@@ -143,7 +134,6 @@ const BootcampCTA = () => {
                                             : '0 10px 25px rgba(236, 26, 99, 0.2)',
                                     }}
                                 >
-                                    {/* Button shine effect */}
                                     <div 
                                         className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 hover:opacity-20 transition-all duration-500 transform -skew-x-12"
                                         style={{
@@ -154,10 +144,8 @@ const BootcampCTA = () => {
                                 </button>
                             </div>
 
-                            {/* Separator */}
                             <div className="hidden lg:block w-px h-16 bg-gradient-to-b from-transparent via-white to-transparent opacity-50"></div>
 
-                            {/* Registration Deadline */}
                             <div className="text-center">
                                 <p className="text-white text-sm md:text-base mb-2">Registration Deadline</p>
                                 <p className="text-[var(--main-color-2)] text-lg md:text-xl lg:text-2xl font-bold">
@@ -167,7 +155,6 @@ const BootcampCTA = () => {
                         </div>
                     </div>
 
-                    {/* CSS Animations */}
                     <style jsx>{`
                         @keyframes gradient-shift {
                             0% { background-position: 0% 50%; }
