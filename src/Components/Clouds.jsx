@@ -1,5 +1,3 @@
-//Save this for Later
-
 import React, { useEffect, useRef } from "react";
 
 const CloudsCount = 3;
@@ -20,7 +18,6 @@ const Clouds = () => {
     canvas.width = width;
     canvas.height = height;
 
-    // Generate clouds
     const clouds = Array.from({ length: CloudsCount }, (_, i) => ({
       x: randomBetween(0, width),
       y: randomBetween(height * 0.1, height * 0.5),
@@ -33,9 +30,8 @@ function drawCloud(cloud) {
   ctx.globalAlpha = 0.7;
   ctx.fillStyle = cloud.color;
 
-  // Draw three overlapping circles for a cloud
   ctx.beginPath();
-  ctx.arc(cloud.x, cloud.y, cloud.radius, 0, Math.PI * 2); // center
+  ctx.arc(cloud.x, cloud.y, cloud.radius, 0, Math.PI * 2); 
   ctx.fill();
 
   ctx.beginPath();
@@ -64,7 +60,6 @@ function drawCloud(cloud) {
 
     animate();
 
-    // Handle resize
     const handleResize = () => {
       width = window.innerWidth;
       height = window.innerHeight;
