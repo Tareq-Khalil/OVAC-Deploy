@@ -17,14 +17,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Example route */}
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/bootcamp" element={<Bootcamp />} />
         <Route path="/bootcamp-registration" element={<BootcampRegistration />} />
         <Route path="/admin-panel" element={<AdminPanel />} />
-        {/* Add more routes here */}
       </Routes>
     </BrowserRouter>
   )

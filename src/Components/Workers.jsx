@@ -4,16 +4,14 @@ import Underline from "./ui/Underline";
 import { motion } from "framer-motion";
 import DB from '../assets/images/Db.json'
 
-// Get workers data from JSON and add roles (since JSON doesn't have roles)
 const workersFromJSON = DB.images.worker.map(worker => ({
   name: worker.name,
-  role: "Team Member", // Default role since JSON doesn't specify roles
+  role: "Team Member",
   imageUrl: worker.src,
   year: worker.year,
   alt: worker.alt
 }));
 
-// You can also create a role mapping if you want specific roles for each person
 const roleMapping = {
   "ziad salah": "Vice-President",
   "abdelrahman ehab": "Mentor",
@@ -36,7 +34,6 @@ const roleMapping = {
   "tareq ismail": "3D Mentor"
 };
 
-// Apply specific roles if available, otherwise use default
 const workers = workersFromJSON.map(worker => ({
   ...worker,
   role: roleMapping[worker.name.toLowerCase()] || "Team Member"
@@ -83,7 +80,6 @@ const WorkerCard = ({ name, role, imageUrl, alt, className = "" }) => {
         alt={alt || `Photo of ${name}`}
         className="object-cover w-50 h-50 mb-6 rounded-full border-4 border-[#ec1a63] shadow-lg"
         onError={(e) => {
-          // Fallback image if the image fails to load
           e.target.src = `https://placehold.co/400x400/53be97/white?text=${name.charAt(0).toUpperCase()}`;
         }}
       />
@@ -101,7 +97,6 @@ const WorkerCard = ({ name, role, imageUrl, alt, className = "" }) => {
 };
 
 const Workers = () => {
-  // Get all unique years from JSON data
   const allYears = [...new Set(workers.map((w) => w.year))].sort(
     (a, b) => b - a
   );
@@ -116,7 +111,6 @@ const Workers = () => {
       <HeadWord HeadWord="Meet Our Team" color="var(--main-color-2)" />
       <Underline color="var(--main-color-2)" />
       
-      {/* Year Filter Buttons */}
       <div className="flex justify-center gap-4 my-8">
         {allYears.map((year) => (
           <button
@@ -133,14 +127,13 @@ const Workers = () => {
         ))}
       </div>
 
-      {/* Team Members Grid - 3 per row */}
       <motion.div
         className="grid w-full max-w-screen-lg grid-cols-1 gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
-        key={selectedYear} // Force re-render when year changes
+        key={selectedYear}
       >
         {filteredWorkers.map((worker, index) => (
           <WorkerCard 
@@ -153,7 +146,6 @@ const Workers = () => {
         ))}
       </motion.div>
 
-      {/* Show message if no workers found for selected year */}
       {filteredWorkers.length === 0 && (
         <div className="text-center text-gray-400 py-8">
           No team members found for {selectedYear}

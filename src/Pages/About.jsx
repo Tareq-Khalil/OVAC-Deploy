@@ -10,7 +10,6 @@ const About = () => {
     <div className='bg-black min-h-screen'>
       <NavBar />
       <StarField />
-      {/* <AboutHero /> */}
       <WhoweAre />
       <Workers />
       <Footer />

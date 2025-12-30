@@ -11,7 +11,6 @@ const AdminPanel = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [adminKey, setAdminKey] = useState('');
 
-  // Admin authentication
   const handleAdminLogin = () => {
     const correctKey = process.env.REACT_APP_ADMIN_KEY || 'your_admin_key_here';
     if (adminKey === correctKey) {
@@ -100,7 +99,6 @@ const AdminPanel = () => {
     window.URL.revokeObjectURL(url);
   };
 
-  // Filter registrations based on search and filters
   const filteredRegistrations = registrations.filter(reg => {
     const matchesSearch = reg.full_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          reg.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -112,7 +110,6 @@ const AdminPanel = () => {
     return matchesSearch && matchesGrade && matchesGender;
   });
 
-  // Get unique grades and genders for filters
   const uniqueGrades = [...new Set(registrations.map(reg => reg.grade.split(' ')[0]))];
   const uniqueGenders = [...new Set(registrations.map(reg => reg.gender))];
 
@@ -149,7 +146,6 @@ const AdminPanel = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 p-6">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 mb-6 border border-white/20">
           <div className="flex justify-between items-center mb-4">
             <div className="flex items-center gap-3">
@@ -178,7 +174,6 @@ const AdminPanel = () => {
             </div>
           </div>
 
-          {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="bg-white/10 rounded-lg p-4">
               <div className="flex items-center gap-2 mb-2">
@@ -219,7 +214,6 @@ const AdminPanel = () => {
           </div>
         </div>
 
-        {/* Filters and Search */}
         <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 mb-6 border border-white/20">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="relative">
@@ -263,21 +257,18 @@ const AdminPanel = () => {
           </div>
         </div>
 
-        {/* Error Display */}
         {error && (
           <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-4 mb-6 text-red-300">
             Error: {error}
           </div>
         )}
 
-        {/* Loading State */}
         {loading ? (
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 text-center">
             <div className="w-8 h-8 border-2 border-white border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
             <p className="text-white">Loading registrations...</p>
           </div>
         ) : (
-          /* Registrations Table */
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 border border-white/20 overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
@@ -326,7 +317,6 @@ const AdminPanel = () => {
           </div>
         )}
 
-        {/* Registration Detail Modal */}
         {selectedRegistration && (
           <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-6 z-50">
             <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-white/20">
