@@ -6,7 +6,7 @@ const Card = ({
   description,
   style,
   icon,
-  borderColor = "#2caa7c", // Default border color
+  borderColor = "#2caa7c",
   className = "",
 }) => {
   return (
@@ -14,7 +14,7 @@ const Card = ({
       style={{
         ...style,
         borderColor: borderColor,
-        boxShadow: `0 0 20px ${borderColor}33`, // Subtle glow effect
+        boxShadow: `0 0 20px ${borderColor}33`, 
       }}
       className={`relative flex w-full flex-col gap-4 overflow-hidden rounded-2xl border-4 bg-gray-900/50 p-6 text-white backdrop-blur-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_${borderColor}55] ${className}`}
     >
