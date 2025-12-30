@@ -28,7 +28,6 @@ const Hero = () => {
         with STEM High School for Boys - 6th of October. We grow the artistic
         talent by providing student-to-student Visual Arts courses.
       </p>
-      {/* buttons  */}
       <div className="mt-8 flex flex-col items-center justify-center gap-6 sm:flex-row">
         <button
           onClick={bootcamp}
