@@ -6,7 +6,6 @@ import Card from "./ui/Card";
 import DB from "../assets/images/Db.json";
 
 function getImageUrl(path) {
-  // Handle both local and external URLs
   if (path.startsWith('http://') || path.startsWith('https://')) {
     return path;
   }
@@ -19,7 +18,6 @@ const images = DB.images.whoWeAre.map((imageData) => ({
   alt: imageData.alt,
 }));
 
-// Independent school video - using external URL
 const SchoolVideoSrc = "https://hc-cdn.hel1.your-objectstorage.com/s/v3/285761236fbe783788e03e21ec3ec33adce49137_gojovssukuna.mp4";
 const SchoolVideoAlt = "School promotional video";
 
@@ -29,7 +27,7 @@ const WhoweAre = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3500); // Cycle every 3.5 seconds
+    }, 3500);
     return () => clearInterval(interval);
   }, [images.length]);
 
