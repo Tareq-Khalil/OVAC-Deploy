@@ -35,7 +35,6 @@ function NavBar() {
               <span className="inline sm:hidden">OVAC</span>
             </div>
           </div>
-          {/* Desktop links */}
           <div className="hidden md:flex space-x-6 items-center">
             <Link
               to="/"
@@ -62,7 +61,6 @@ function NavBar() {
               Bootcamp
             </Link>
           </div>
-          {/* Hamburger button */}
           <button
             className="md:hidden flex justify-center items-center w-10 h-10 z-50"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -70,7 +68,6 @@ function NavBar() {
             style={{ position: "relative" }}
           >
             {menuOpen ? (
-              // Bigger X icon without circles
               <svg
                 width="36"
                 height="36"
@@ -98,7 +95,6 @@ function NavBar() {
                 />
               </svg>
             ) : (
-              // Hamburger icon
               <div className="flex flex-col justify-center items-center w-8 h-8">
                 <span className="block w-6 h-0.5 bg-[#ec1a63] mb-1"></span>
                 <span className="block w-6 h-0.5 bg-[#ec1a63] mb-1"></span>
@@ -107,7 +103,6 @@ function NavBar() {
             )}
           </button>
         </div>
-        {/* Modern Mobile menu */}
         {menuOpen && (
           <div
             ref={menuRef}
@@ -156,7 +151,6 @@ function NavBar() {
         className="fixed left-1/2 -translate-x-1/2 w-[75%] h-1 bg-[#ec1a63]"
         style={{ top: "5rem", zIndex: 49 }}
       />
-      {/* Add slideDown and xPop animation */}
       <style>
         {`
           @keyframes slideDown {

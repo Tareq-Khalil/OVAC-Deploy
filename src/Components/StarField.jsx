@@ -17,7 +17,6 @@ const StarField = () => {
     canvas.width = width;
     canvas.height = height;
 
-    // Generate stars
     const stars = Array.from({ length: STAR_COUNT }, () => ({
       x: randomBetween(0, width),
       y: randomBetween(0, height),
@@ -45,7 +44,6 @@ const StarField = () => {
 
     animate();
 
-    // Handle resize
     const handleResize = () => {
       width = window.innerWidth;
       height = window.innerHeight;
