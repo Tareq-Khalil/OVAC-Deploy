@@ -25,7 +25,6 @@ const Footer = () => {
             <FaFacebookF size={24} />
           </a>
         </div>
-        {/* adress and mail */}
         <div className="mb-6 text-gray-400">
           <a href="mailto:support@octvisualartsclub.org" className="hover:text-[white] transition-colors duration-300">
               support@octvisualartsclub.org
