@@ -1,4 +1,3 @@
-// R_EligabilityCard.jsx
 import React from 'react'
 import { LuLanguages } from 'react-icons/lu'
 
