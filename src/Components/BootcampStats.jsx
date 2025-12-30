@@ -66,7 +66,6 @@ const StatBox = ({ label, value, colors, delay, border, gradient }) => {
       whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.6, delay }}
       viewport={{ once: false, amount: 0.5 }}
-      // UPDATED LINE BELOW: Added 'my-6 md:my-0'
       className={`flex flex-col items-center justify-center rounded-2xl px-10 py-8 shadow-xl mx-4 my-6 md:my-0 min-w-[220px] min-h-[180px] md:w-[240px] md:h-[200px] border-4 ${border}`}
       style={{
         background: gradient,
@@ -85,13 +84,11 @@ const StatBox = ({ label, value, colors, delay, border, gradient }) => {
 const BootcampStats = () => {
   return (
     <div className="flex flex-col justify-center items-center py-20 px-4 relative z-1 overflow-hidden">
-      {/* Header section with explicit centering */}
       <div className="w-full flex flex-col items-center justify-center text-center">
         <HeadWord HeadWord={"Last Year's Numbers"} />
         <Underline />
       </div>
 
-      {/* Introductory text */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
