@@ -19,12 +19,11 @@
       mass: 0.6
     }
 
-    // Function to get responsive animation values
     const getAnimationVariants = (direction) => {
       return {
         hidden: { 
           opacity: 0, 
-          x: direction === 'left' ? -30 : 30 // Reduced movement for better mobile experience
+          x: direction === 'left' ? -30 : 30 
         },
         visible: { opacity: 1, x: 0 }
       }
@@ -32,7 +31,6 @@
 
     return (
       <div className="w-full">
-        {/* Header Section - Fully responsive */}
         <div className='flex flex-col items-center justify-center my-6 sm:my-8 md:my-12 lg:my-16 xl:my-20 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12'>
           <div className="flex flex-col items-center text-center w-full max-w-4xl">
             <HeadWord HeadWord="Program Eligibility" color='#eeeb76' />  
@@ -42,11 +40,9 @@
           </div>
         </div>
         
-        {/* Cards Container - Enhanced responsive layout */}
         <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 pb-6 sm:pb-8 md:pb-12 lg:pb-16">
           <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
             
-            {/* First Card - Responsive alignment */}
             <MotionDiv
               className="flex justify-center md:justify-start w-full"
               variants={getAnimationVariants('left')}
@@ -69,7 +65,6 @@
               </div>
             </MotionDiv>
             
-            {/* Second Card - Responsive alignment */}
             <MotionDiv
               className="flex justify-center md:justify-end w-full"
               variants={getAnimationVariants('right')}
@@ -92,7 +87,6 @@
               </div>
             </MotionDiv>
             
-            {/* Third Card - Responsive alignment */}
             <MotionDiv
               className="flex justify-center md:justify-start w-full"
               variants={getAnimationVariants('left')}
@@ -115,7 +109,6 @@
               </div>
             </MotionDiv>
             
-            {/* Fourth Card - Responsive alignment */}
             <MotionDiv
               className="flex justify-center md:justify-end w-full"
               variants={getAnimationVariants('right')}
