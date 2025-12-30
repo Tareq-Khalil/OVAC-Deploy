@@ -3,13 +3,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Card from "./ui/Card1";
 
 const VisionSection = () => {
-  // This code for animation using the library
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end end"],
   });
-  // completing the code with hook useTransform
   const leftCardX = useTransform(scrollYProgress, [0.1, 0.7], ["-100%", "0%"]);
   const rightCardX = useTransform(scrollYProgress, [0.1, 0.7], ["100%", "0%"]);
   const cardOpacity = useTransform(scrollYProgress, [0.1, 0.6], [0, 1]);
@@ -21,7 +19,6 @@ const VisionSection = () => {
   const rightCardStyle = { x: rightCardX, opacity: cardOpacity };
 
   return (
-    // The head word
     <div
       ref={containerRef}
       className="flex flex-col items-center justify-center min-h-screen px-4 py-16 text-center overflow-x-hidden"
@@ -32,12 +29,10 @@ const VisionSection = () => {
       >
         Our Vision
       </motion.h2>
-      {/* the line under the head word */}
       <motion.div
         className="w-24 h-1 bg-[var(--main-color-3)] rounded mb-8"
         style={{ scaleX: lineScaleX, transformOrigin: "left" }}
       ></motion.div>
-      {/* the two cards with props  */}
       <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
         <Card
           title={<span style={{ color: "#fdef9d" }}>Our Mission</span>}
