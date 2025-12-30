@@ -4,7 +4,6 @@ import Underline from "./ui/Underline";
 import { motion, AnimatePresence } from "framer-motion";
 import DB from "../assets/images/Db.json";
 
-// Your video URL
 const SchoolVideoSrc = "https://hc-cdn.hel1.your-objectstorage.com/s/v3/285761236fbe783788e03e21ec3ec33adce49137_gojovssukuna.mp4";
 
 const GalleryHero = () => {
@@ -14,13 +13,11 @@ const GalleryHero = () => {
   const [videoError, setVideoError] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
-  // Animation variants
   const fromRightVariant = {
     hidden: { opacity: 0, x: 100 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
   };
 
-  // Process gallery data and check for valid items
   useEffect(() => {
     const processGalleryData = () => {
       const items = DB.images.gallery.map((item, index) => ({
@@ -37,23 +34,20 @@ const GalleryHero = () => {
     processGalleryData();
   }, []);
 
-  // Handle successful loading
   const handleLoad = (id) => {
     setLoadedItems(prev => new Set([...prev, id]));
   };
 
-  // Handle loading errors
   const handleError = (id, isVideo) => {
     console.log(`Failed to load ${isVideo ? 'video' : 'image'}: ${galleryItems.find(item => item.id === id)?.src}`);
     
-    // Update the item with a placeholder
     setGalleryItems(prev => 
       prev.map(item => 
         item.id === id 
           ? {
               ...item, 
               src: `https://placehold.co/400x300/333/fff?text=${isVideo ? 'Video+Not+Found' : 'Image+Not+Found'}`,
-              isVideo: false, // Convert videos to images if they fail
+              isVideo: false, 
               hasError: true
             }
           : item
@@ -74,7 +68,6 @@ const GalleryHero = () => {
         A collection of our finest work. Click on any image or video to view it in full screen.
       </p>
 
-      {/* Featured Video Section - Large and Prominent */}
       <div className="mb-20 flex justify-center">
         <div className="w-full max-w-6xl relative">
           <div className="bg-gray-900 rounded-3xl shadow-2xl border border-gray-700 overflow-hidden">
@@ -146,7 +139,6 @@ const GalleryHero = () => {
 
 
 
-      {/* Section divider */}
       <div className="mb-12 flex items-center justify-center">
         <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
         <span className="px-4 text-gray-400 text-sm whitespace-nowrap">Gallery Collection</span>
@@ -172,9 +164,7 @@ const GalleryHero = () => {
                 onLoadedData={() => handleLoad(item.id)}
                 onError={() => handleError(item.id, true)}
                 onCanPlay={(e) => {
-                  // Try to play the video on hover
                   e.target.play().catch(() => {
-                    // If autoplay fails, that's okay
                   });
                 }}
               />
@@ -188,7 +178,6 @@ const GalleryHero = () => {
               />
             )}
             
-            {/* Overlay */}
             <div className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-black/60 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <div className="text-center">
                 <p className="font-bold text-white drop-shadow-lg">
@@ -200,14 +189,12 @@ const GalleryHero = () => {
               </div>
             </div>
 
-            {/* Loading indicator */}
             {!loadedItems.has(item.id) && !item.hasError && (
               <div className="absolute inset-0 flex items-center justify-center bg-gray-800">
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
               </div>
             )}
 
-            {/* Video indicator */}
             {item.isVideo && !item.hasError && (
               <div className="absolute top-2 right-2 bg-black/50 rounded px-2 py-1">
                 <span className="text-white text-xs">🎬 VIDEO</span>
@@ -217,7 +204,6 @@ const GalleryHero = () => {
         ))}
       </div>
 
-      {/* Modal */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
@@ -254,7 +240,6 @@ const GalleryHero = () => {
                 />
               )}
               
-              {/* Close button */}
               <motion.button
                 className="absolute -top-12 right-0 text-4xl text-white hover:text-red-400 transition-colors bg-black/50 rounded-full w-12 h-12 flex items-center justify-center"
                 onClick={closeModal}
@@ -265,7 +250,6 @@ const GalleryHero = () => {
                 ×
               </motion.button>
 
-              {/* Media info */}
               <div className="absolute -bottom-16 left-0 right-0 text-center">
                 <p className="text-white text-lg font-semibold">{selectedImage.name}</p>
                 <p className="text-gray-300 text-sm">
@@ -277,7 +261,6 @@ const GalleryHero = () => {
         )}
       </AnimatePresence>
 
-      {/* Gallery stats */}
       <div className="mt-8 text-gray-400 text-sm">
         <p>
           Showing {galleryItems.length} items • 
