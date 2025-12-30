@@ -10,20 +10,16 @@ const VisualartsSection = () => {
     offset: ["start end", "end end"],
   });
 
-  // Get visual arts apps from database
   const visualArtsApps = DB.apps.filter(app => app.category === "visual-arts");
 
-  // Animations for titles
   const titleOpacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
   const titleY = useTransform(scrollYProgress, [0, 0.2], ["20px", "0px"]);
   const lineScaleX = useTransform(scrollYProgress, [0.05, 0.3], [0, 1]);
 
-  // Animations for row 1 (first 3 cards)
   const cardOpacity1 = useTransform(scrollYProgress, [0.1, 0.3], [0, 1]);
   const cardScale1 = useTransform(scrollYProgress, [0.1, 0.4], [0.8, 1]);
   const cardY1 = useTransform(scrollYProgress, [0.1, 0.4], ["50px", "0px"]);
 
-  // Animations for row 2 (last 3 cards)
   const cardOpacity2 = useTransform(scrollYProgress, [0.3, 0.5], [0, 1]);
   const cardScale2 = useTransform(scrollYProgress, [0.3, 0.6], [0.8, 1]);
   const cardY2 = useTransform(scrollYProgress, [0.3, 0.6], ["50px", "0px"]);
@@ -49,19 +45,16 @@ const VisualartsSection = () => {
       ref={containerRef}
       className="flex flex-col items-center justify-center min-h-screen px-4 py-16 text-center overflow-hidden"
     >
-      {/* Title */}
       <motion.h2
         style={{ opacity: titleOpacity, y: titleY }}
         className="text-4xl font-extrabold text-[#ec1a63] mb-4"
       >
         Explore the World of Visual Arts
       </motion.h2>
-            {/* Decorative line */}
       <motion.div
         style={{ scaleX: lineScaleX, transformOrigin: "left" }}
         className="w-24 h-1 bg-[#ec1a63] rounded mb-8"
       ></motion.div>
-      {/* Subtitle */}
       <motion.p
         style={{ opacity: titleOpacity, y: titleY }}
         className="text-lg mb-5 text-white"
@@ -73,7 +66,6 @@ const VisualartsSection = () => {
       
 
 
-      {/* Cards Grid - 3 cards per row */}
       <div className="grid w-full max-w-7xl grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-3 lg:gap-12">
         {visualArtsApps.map((app, index) => (
           <Card
