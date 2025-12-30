@@ -18,7 +18,6 @@ const BootcampHero = () => {
           WebkitBackdropFilter: "blur(16px)",
         }}
       >
-        {/* Main Title */}
         <div className="mb-6 sm:mb-8 lg:mb-10 px-2 sm:px-4 lg:px-6">
           <h1 className="font-bold leading-tight tracking-wide" style={{ fontFamily: 'Motoverse, sans-serif' }}>
             <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
@@ -34,12 +33,10 @@ const BootcampHero = () => {
           </h1>
         </div>
         
-        {/* Subtitle */}
         <p className="text-[var(--main-color-2)] text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 lg:mb-10 font-medium text-center leading-relaxed px-2 sm:px-4">
           Acquire creative visual arts skills through our 5-week online program
         </p>
         
-        {/* CTA Button */}
         <button 
           onClick={handleApplyClick}
           className="bg-[var(--main-color)] hover:bg-pink-800 text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 rounded-full inline-block mb-6 sm:mb-8 lg:mb-10 cursor-pointer transition-all duration-200 text-base sm:text-lg lg:text-xl xl:text-2xl font-bold transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl"
@@ -47,7 +44,6 @@ const BootcampHero = () => {
           APPLY NOW
         </button>
         
-        {/* Registration Deadline */}
         <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl text-center leading-relaxed">
           Registration Deadline: <span className="text-[var(--main-color-2)] font-semibold">October 10, 2025</span>
         </p>
