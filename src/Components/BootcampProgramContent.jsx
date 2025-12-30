@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
-// Timeline Dot Component with scroll-triggered animation
 const TimelineDot = ({ index }) => {
     const [isVisible, setIsVisible] = useState(false);
     const dotRef = useRef(null);
@@ -64,7 +63,6 @@ const AnimatedProgramContentCard = ({
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    // Add a slight delay based on index for staggered effect
                     setTimeout(() => {
                         setIsVisible(true);
                     }, index * 150);
@@ -111,7 +109,6 @@ const AnimatedProgramContentCard = ({
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            {/* Animated background glow */}
             <div 
                 className="absolute inset-0 opacity-0 transition-opacity duration-500 rounded-xl sm:rounded-2xl lg:rounded-3xl"
                 style={{
@@ -120,7 +117,6 @@ const AnimatedProgramContentCard = ({
                 }}
             />
             
-            {/* Floating particles animation - only show on larger screens */}
             {isHovered && (
                 <>
                     <div 
@@ -158,7 +154,6 @@ const AnimatedProgramContentCard = ({
             }`}>
                 <span className="text-white leading-tight relative px-2">
                     {title}
-                    {/* Animated underline */}
                     <div 
                         className="absolute bottom-0 left-1/2 h-0.5 transition-all duration-500 transform -translate-x-1/2"
                         style={{
@@ -169,7 +164,6 @@ const AnimatedProgramContentCard = ({
                 </span>
             </h2>
             
-            {/* Sessions and Workshops - Stack on small screens */}
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 md:space-x-4 mb-3 sm:mb-4 w-full">
                 {sessions && (
                     <div 
@@ -331,7 +325,6 @@ const AnimatedBootcampProgramContent = () => {
             </div>
             
             <div className="relative container mx-auto px-2 sm:px-4 md:px-6 flex flex-col space-y-4 sm:space-y-6 md:space-y-8" ref={timelineRef}>
-                {/* Animated central line - responsive width and positioning */}
                 <div 
                     className={`absolute z-0 w-1 sm:w-1.5 md:w-2 h-full inset-0 left-1/2 -translate-x-1/2 overflow-hidden transition-all duration-1000 ease-out hidden sm:block ${
                         visibleTimeline ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
@@ -342,7 +335,6 @@ const AnimatedBootcampProgramContent = () => {
                         transformOrigin: 'top center',
                     }}
                 >
-                    {/* Animated pulse running down the line */}
                     {visibleTimeline && (
                         <div 
                             className="absolute w-full h-10 sm:h-15 md:h-20 bg-gradient-to-b from-transparent via-white to-transparent opacity-50"
@@ -355,13 +347,11 @@ const AnimatedBootcampProgramContent = () => {
 
                 {programData.map((item, index) => (
                     <div key={index} className="relative flex items-center">
-                        {/* Mobile Layout: Center everything */}
                         {isMobile ? (
                             <div className="w-full px-4">
                                 <AnimatedProgramContentCard {...item} index={index} align="center" />
                             </div>
                         ) : (
-                            /* Desktop/Tablet Layout: Alternating sides */
                             <div
                                 className={`w-1/2 ${
                                     item.align === "left" ? "pr-4 sm:pr-6 md:pr-8" : "pl-4 sm:pl-6 md:pl-8 ml-auto"
@@ -371,7 +361,6 @@ const AnimatedBootcampProgramContent = () => {
                             </div>
                         )}
                         
-                        {/* Animated timeline dot - only show on larger screens */}
                         {!isMobile && <TimelineDot index={index} />}
                     </div>
                 ))}
