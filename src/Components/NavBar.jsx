@@ -16,8 +16,7 @@ function NavBar() {
     }
 
     document.addEventListener("mousedown", handleClickOutside);
-    return () =>
-      document.removeEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [menuOpen]);
 
   return (
@@ -33,9 +32,17 @@ function NavBar() {
             />
 
             <div className="text-lg font-bold text-gray-100 md:text-xl lg:text-2xl">
-              <span className="hidden sm:inline fonted">
+              {/* Motoverse applied ONLY here */}
+              <span
+                className="hidden sm:inline"
+                style={{
+                  fontFamily: "Motoverse, sans-serif",
+                  letterSpacing: "0.08em",
+                }}
+              >
                 October Visual Arts Club
               </span>
+
               <span className="inline sm:hidden">OVAC</span>
             </div>
           </div>
@@ -139,7 +146,7 @@ function NavBar() {
         )}
       </nav>
 
-      {/* Bottom Accent Line */}
+      {/* Accent Line */}
       <div
         className="fixed left-1/2 -translate-x-1/2 w-[75%] h-1 bg-[#ec1a63]"
         style={{ top: "5rem", zIndex: 49 }}
