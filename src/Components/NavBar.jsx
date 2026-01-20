@@ -43,7 +43,9 @@ function NavBar() {
                 October Visual Arts Club
               </span>
 
-              <span className="inline sm:hidden">OVAC</span>
+              <span className="inline sm:hidden" style={{
+                  fontFamily: "Motoverse, sans-serif",
+                }}>OVAC</span>
             </div>
           </div>
 
