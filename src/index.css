@@ -6,6 +6,7 @@
 @font-face {
   font-family: "Motoverse";
   src: url("/fonts/motoverse.woff2") format("woff2"),
+       url("/fonts/motoverse.woff") format("woff"),
        url("/fonts/motoverse.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
