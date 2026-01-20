@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Motoverse';
-  src: url('Motoverse.woff2') format('woff2'),
-       url('Motoverse.ttf') format('truetype');
+  src: url('motoverse.woff2') format('woff2'),
+       url('motoverse.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

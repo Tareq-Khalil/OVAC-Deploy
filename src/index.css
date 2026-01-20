@@ -1,14 +1,36 @@
 @import "tailwindcss";
 
-
-:root{
-  --main-color: #ec1a63;
-  --main-color-2:#eeeb76;
-  --main-color-3:#2caa7c;
+/* =========================
+   Motoverse Font
+   ========================= */
+@font-face {
+  font-family: "Motoverse";
+  src: url("/fonts/motoverse.woff2") format("woff2"),
+       url("/fonts/motoverse.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+.fonted {
+  font-family: "Motoverse", sans-serif;
+  letter-spacing: 0.08em;
+}
+
+/* =========================
+   CSS Variables
+   ========================= */
+:root {
+  --main-color: #ec1a63;
+  --main-color-2: #eeeb76;
+  --main-color-3: #2caa7c;
+}
+
+/* =========================
+   Scrollbar Styling
+   ========================= */
 ::-webkit-scrollbar {
-  width: .75vw;
+  width: 0.75vw;
 }
 
 ::-webkit-scrollbar-track {
@@ -24,6 +46,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #dd034f;
 }
-
-
-
