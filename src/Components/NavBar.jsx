@@ -31,7 +31,7 @@ function NavBar() {
               className="h-10 w-10 md:h-12 md:w-12"
             />
 
-            <div className="text-lg font-bold text-gray-100 md:text-xl lg:text-2xl">
+            <div className="text-base font-bold text-gray-100 md:text-lg lg:text-xl">
               {/* Motoverse applied ONLY here */}
               <span
                 className="hidden sm:inline"
@@ -128,16 +128,22 @@ function NavBar() {
             </h2>
 
             {[
-              { to: "/", label: "Home" },
-              { to: "/about", label: "About us" },
-              { to: "/gallery", label: "Gallery" },
-              { to: "/Bootcamp", label: "Bootcamp" },
+              { to: "/", label: "Home", color: "#ec1a63", border: false },
+              { to: "/about", label: "About us", color: "#fdef9d", border: false },
+              { to: "/gallery", label: "Gallery", color: "#2caa7c", border: false },
+              { to: "/Bootcamp", label: "Bootcamp", color: "#ec1a63", border: true },
             ].map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setMenuOpen(false)}
-                className="text-2xl font-bold text-[#ec1a63] hover:text-white transition"
+                className={`text-2xl font-bold hover:text-white transition ${
+                  item.border ? "border-2 px-4 py-2 rounded-lg" : ""
+                }`}
+                style={{
+                  color: item.color,
+                  borderColor: item.border ? item.color : undefined,
+                }}
               >
                 {item.label}
               </Link>
