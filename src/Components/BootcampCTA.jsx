@@ -117,7 +117,7 @@ const BootcampCTA = () => {
                             <div className="text-center">
                                 <p className="text-white text-sm md:text-base mb-2">Program Starts at</p>
                                 <p className="text-[var(--main-color-2)] text-lg md:text-xl lg:text-2xl font-bold">
-                                    13 October 2025
+                                    23 September 2025
                                 </p>
                             </div>
 
