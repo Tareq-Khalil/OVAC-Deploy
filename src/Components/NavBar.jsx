@@ -131,7 +131,7 @@ function NavBar() {
               { to: "/", label: "Home", color: "#ec1a63", border: false },
               { to: "/about", label: "About us", color: "#fdef9d", border: false },
               { to: "/gallery", label: "Gallery", color: "#2caa7c", border: false },
-              { to: "/Bootcamp", label: "Bootcamp", color: "#ec1a63", border: true },
+              { to: "/Bootcamp", label: "Bootcamp", color: "#FFFFFF", border: true },
             ].map((item) => (
               <Link
                 key={item.to}
