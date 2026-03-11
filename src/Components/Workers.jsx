@@ -32,12 +32,12 @@ const roleMapping = {
   "tareq khalil": "Animation Mentor\n Co-Web Developer",
   "mohamed salah": "Social Media Director\nVideo Editing Mentor",
   "tareq ismail": "3D Mentor",
-  "youssef kamel" : "President",
+  "youssef kamel" : "President\n Photoshop Mentor",
+  "Adham Wahdan":"Vice-President",
   "seif wael":"Vice-President\n Animation Mentor",
-  "wahdan":"Vice-President",
-  "maro":"Media & Marketing Director",
-  "asser alsergany":"",
-  "daniel george":""
+  "maro":"Media & Marketing Director\n Video Editing Mentor",
+  "asser alsergany":"Graphic Design Mentor",
+  "daniel george":"3D Mentor"
 };
 
 const workers = workersFromJSON.map(worker => ({
